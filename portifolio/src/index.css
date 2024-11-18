@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  #logo {
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+  }
+
+  body {
+    background-color: #161513;
+  }
+
+  header, footer {
+    background-color: #222222;
+  }
+
+  header a {
+    cursor: pointer;
+  }
+  header a:hover {
+    color: gray;
+  }
+}
