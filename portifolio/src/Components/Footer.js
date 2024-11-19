@@ -1,24 +1,72 @@
+import { useState } from "react"
+
 // ICONS
-import phone from '../Images/phone.png'
-import email from '../Images/email.png'
+import github from "../Images/github.png";
+import linkedin from "../Images/linkedin.png";
+import instagram from "../Images/instagram.png";
+
+function ContactForm() {
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+  const [status, setStatus] = useState("")
+}
+
+const handleSubmit = async (e) => {
+  e.preventDefault()
+  setStatus("Enviando...")
+
+  try {
+    const response = await fetch (
+      
+    )
+  } catch () {
+    
+  }
+}
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-200 mb-3">
-      <div>
-        <h3 className="font-bold px-7 py-5">Entre em Contato</h3>
-        <div className="ml-7 space-y-4">
-          <div className="flex space-x-3 items-center">
-            <img src={phone}/>
-            <p>(87) 99109-0861</p>
-          </div>
-          <div className="flex space-x-3 items-center">
-            <img src={email}/>
-            <p>cleciolira2002@gmail.com</p>
-          </div>
+    <footer className="bg-gray-900 text-gray-100">
+      <div className="p-4">
+        <h4 className="font-bold text-2xl text-center">Entre em contato</h4>
+
+        <div className="flex flex-col pt-6">
+          <form className="space-y-5">
+
+            <label className="flex flex-col">
+              <span>Email: </span>
+              <input
+                type="email"
+                placeholder="Digite seu email"
+                className="mt-1 px-3 py-1 rounded-md"
+              />
+            </label>
+
+            <label className="flex flex-col">
+              <span>Mensagem:</span>
+              <textarea
+                className="mt-1 rounded-md px-3 py-1"
+                placeholder="Digite sua mensagem"
+              ></textarea>
+            </label>
+
+            <button type="submit" className="w-full bg-gray-200 text-black">Enviar</button>
+          </form>
         </div>
 
-        <p className="text-center mt-5">© 2024 Clécio Lira. Todos os direitos reservados.</p>
+        <div className="pt-4">
+          <ul className="flex justify-evenly items-center">
+            <li>
+              <img src={github} alt="Icon JavaScript" className="size-10" />
+            </li>
+            <li>
+              <img src={linkedin} alt="Icon Nodejs" className="size-12" />
+            </li>
+            <li>
+              <img src={instagram} alt="Icon HTML" className="size-10" />
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   );

@@ -78,4 +78,9 @@
     box-shadow: 0 0 8px rgba(128, 128, 128, 0.5);
     transition: .5s;
   }
+
+  input, textarea {
+    background-color: transparent;
+    border: 1px solid white;
+  }
 }

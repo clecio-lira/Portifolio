@@ -1,29 +1,33 @@
 // IMAGES
 import Avatar from "../Images/Avatar.jpg";
+import imc from "../Images/IMC.png";
+import starwars from "../Images/starwars.png";
+import profile from "../Images/profile.png";
+import login from "../Images/login.png";
+
+// ICONS
 import js from "../Images/javascript.png";
 import css from "../Images/css.png";
 import html from "../Images/html.png";
 import react from "../Images/reactjs.png";
 import nodejs from "../Images/nodejs.png";
 import view from "../Images/View_Icon.png";
-import imc from "../Images/IMC.png";
-import starwars from "../Images/starwars.png";
-import profile from "../Images/profile.png";
-import login from "../Images/login.png";
+import tail from '../Images/tailwind.png'
+
 
 const Main = () => {
   return (
-    <main className="bg-gray-950 text-gray-100 space-y-5">
-      <section className="space-y-5">
+    <main className="bg-gray-950 text-gray-100 space-y-5 pt-16 md:space-y-10">
+      <section className="space-y-5 md:space-y-10">
         <div className="w-full flex justify-center pt-10 bg-gray-950">
           <img src={Avatar} alt="Avatar" id="avatar" />
         </div>
 
-        <h2 className="text-center font-bold text-4xl flex flex-col">
-          Olá, eu sou<span className="nome">Clécio Lira!</span>
+        <h2 className="text-center font-bold text-4xl flex flex-col md:flex-row md:justify-center">
+          Olá, eu sou<span className="nome md:ml-3">Clécio Lira!</span>
         </h2>
 
-        <p className="text-justify px-3 text-gray-300">
+        <p className="text-justify px-3 text-gray-300 md:px-24">
           Sou um desenvolvedor em transição de carreira para a área de
           front-end. Após desenvolver minha paixão por tecnologia e programação,
           decidi me especializar em desenvolvimento web, focando principalmente
@@ -36,8 +40,8 @@ const Main = () => {
         </p>
 
         <div className="flex justify-evenly">
-          <button className="bg-gray-200 text-black">Conversar</button>
-          <button>Baixar CV</button>
+          <button className="bg-gray-200 text-black md:px-10">Conversar</button>
+          <button className="md:px-10">Baixar CV</button>
         </div>
       </section>
 
@@ -60,13 +64,16 @@ const Main = () => {
           <li>
             <img src={react} alt="Icon React" />
           </li>
+          <li>
+            <img src={tail} alt="Icon Tailwind" />
+          </li>
         </ul>
       </section>
 
-      <section>
+      <section className="md:px-10">
         <h3 className="text-center text-3xl font-extrabold nome">Projetos</h3>
 
-        <div>
+        <div className="pb-4 md:grid md:grid-cols-2 md:grid-rows-2">
 
           <div className="card m-5 bg-gray-900">
             <a
