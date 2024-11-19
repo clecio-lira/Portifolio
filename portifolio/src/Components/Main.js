@@ -42,7 +42,7 @@ const Main = () => {
       </section>
 
       <section className="py-7 space-y-10">
-        <h3 className="text-center text-2xl font-semibold">Linguagens</h3>
+        <h3 className="text-center text-2xl">Linguagens</h3>
 
         <ul className="flex justify-evenly">
           <li>
@@ -68,7 +68,7 @@ const Main = () => {
 
         <div>
 
-          <div id="card" className="m-5 bg-gray-900">
+          <div className="card m-5 bg-gray-900">
             <a
               href="https://cleciolira.github.io/Calcular_IMC/"
               target="_blank"
@@ -86,7 +86,7 @@ const Main = () => {
             </a>
           </div>
 
-          <div id="card" className="m-5 bg-gray-900">
+          <div className="card m-5 bg-gray-900">
             <a
               href="https://cleciolira.github.io/Web-Page-StarWars/"
               target="_blank"
@@ -104,7 +104,7 @@ const Main = () => {
             </a>
           </div>
 
-          <div id="card" className="m-5 bg-gray-900">
+          <div className="card m-5 bg-gray-900">
             <a
               href="https://cleciolira.github.io/Social_Links_Profile/"
               target="_blank"
@@ -122,7 +122,7 @@ const Main = () => {
             </a>
           </div>
 
-          <div id="card" className="m-5 bg-gray-900">
+          <div className="card m-5 bg-gray-900">
             <a
               href="https://cleciolira.github.io/Projeto-Login/"
               target="_blank"
@@ -139,9 +139,7 @@ const Main = () => {
               </div>
             </a>
           </div>
-
         </div>
-
       </section>
     </main>
   );
