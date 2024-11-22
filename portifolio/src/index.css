@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
   #logo {
     font-family: "Lavishly Yours", cursive;
     font-weight: 400;
@@ -62,9 +66,6 @@
     padding: .1em;
     width: 35px;
   }
-  ul li:hover {
-    border-bottom: 1px solid gray;
-  }
 
   .card {
     border-radius: 1em;
@@ -82,5 +83,9 @@
   input, textarea {
     background-color: transparent;
     border: 1px solid white;
+  }
+
+  footer li a:hover {
+    text-decoration: underline;
   }
 }

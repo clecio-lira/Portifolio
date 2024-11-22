@@ -1,73 +1,60 @@
-import { useState } from "react"
+import { useState } from "react";
 
 // ICONS
 import github from "../Images/github.png";
 import linkedin from "../Images/linkedin.png";
 import instagram from "../Images/instagram.png";
 
-function ContactForm() {
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
-  const [status, setStatus] = useState("")
-}
-
-const handleSubmit = async (e) => {
-  e.preventDefault()
-  setStatus("Enviando...")
-
-  try {
-    const response = await fetch (
-      
-    )
-  } catch () {
-    
-  }
-}
+const links = [
+  {
+    id: 0,
+    img: github,
+    title: "Github Clécio Lira",
+    url: "https://github.com/ClecioLira",
+  },
+  {
+    id: 1,
+    img: linkedin,
+    title: "Linkedin Clécio Lira",
+    url: "https://www.linkedin.com/in/cleciolira/",
+  },
+  {
+    id: 2,
+    img: instagram,
+    title: "Instagram Clécio Lira",
+    url: "https://www.instagram.com/cleciu_lira/",
+  },
+];
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-100">
+    <footer
+      className="bg-gray-900 text-gray-100 rounded-t-xl pb-20"
+      id="contatos"
+    >
       <div className="p-4">
-        <h4 className="font-bold text-2xl text-center">Entre em contato</h4>
+        <h4 className="font-bold text-2xl text-center py-3 scrollcenter">
+          Contatos
+        </h4>
 
-        <div className="flex flex-col pt-6">
-          <form className="space-y-5">
-
-            <label className="flex flex-col">
-              <span>Email: </span>
-              <input
-                type="email"
-                placeholder="Digite seu email"
-                className="mt-1 px-3 py-1 rounded-md"
-              />
-            </label>
-
-            <label className="flex flex-col">
-              <span>Mensagem:</span>
-              <textarea
-                className="mt-1 rounded-md px-3 py-1"
-                placeholder="Digite sua mensagem"
-              ></textarea>
-            </label>
-
-            <button type="submit" className="w-full bg-gray-200 text-black">Enviar</button>
-          </form>
-        </div>
-
-        <div className="pt-4">
-          <ul className="flex justify-evenly items-center">
-            <li>
-              <img src={github} alt="Icon JavaScript" className="size-10" />
+        <div className="pt-4 flex flex-col items-center">
+          {links.map((link) => (
+            <li
+              key={link.id}
+              className="flex items-center space-x-3 scrollcenter py-2"
+            >
+              <img src={link.img} alt="Icon JavaScript" className="size-8" />
+              <a href={link.url} target="_blank">
+                {link.title}
+              </a>
             </li>
-            <li>
-              <img src={linkedin} alt="Icon Nodejs" className="size-12" />
-            </li>
-            <li>
-              <img src={instagram} alt="Icon HTML" className="size-10" />
-            </li>
-          </ul>
+          ))}
         </div>
       </div>
+
+      <p className="text-center mt-3 scrollbottom">
+        Desenvolvido com ❤️ por <span className="font-bold">Clécio Lira</span>.
+      </p>
     </footer>
   );
 };

@@ -1,19 +1,22 @@
 const Header = () => {
   return (
-    <div className="fixed w-full">
-      <header className="text-gray-100 flex justify-around py-2 items-center bg-gray-900">
-        <div id="logo">
-          <p>CL</p>
-        </div>
-        <nav className="space-x-3 md:space-x-6">
-          <a>Inicio</a>
-          <a>Linguagens</a>
-          <a>Projetos</a>
-          <a>Contatos</a>
-        </nav>
-      </header>
-    </div>
+    <header>
+      <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-6 py-3 rounded-full shadow-lg flex gap-4 items-center">
+        <a href="#inicio" className="hover:text-gray-100">
+          Início
+        </a>
+        <a href="#linguagens" className="hover:text-gray-100">
+          Linguagens
+        </a>
+        <a href="#projetos" className="hover:text-gray-100">
+          Projetos
+        </a>
+        <a href="#contatos" className="hover:text-gray-100">
+          Contatos
+        </a>
+      </div>
+    </header>
   );
-};
+}
 
 export default Header;
