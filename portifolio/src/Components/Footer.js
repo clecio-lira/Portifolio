@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 // ICONS
 import github from "../Images/github.png";
 import linkedin from "../Images/linkedin.png";
@@ -29,11 +27,11 @@ const links = [
 const Footer = () => {
   return (
     <footer
-      className="bg-gray-900 text-gray-100 rounded-t-xl pb-20"
+      className="bg-gray-900 text-gray-100 rounded-t-xl"
       id="contatos"
     >
       <div className="p-4">
-        <h4 className="font-bold text-2xl text-center py-3 scrollcenter">
+        <h4 className="font-bold text-2xl text-center py-3">
           Contatos
         </h4>
 
@@ -41,7 +39,7 @@ const Footer = () => {
           {links.map((link) => (
             <li
               key={link.id}
-              className="flex items-center space-x-3 scrollcenter py-2"
+              className="flex items-center space-x-3 py-2"
             >
               <img src={link.img} alt="Icon JavaScript" className="size-8" />
               <a href={link.url} target="_blank">
@@ -52,7 +50,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className="text-center mt-3 scrollbottom">
+      <p className="text-center mt-3">
         Desenvolvido com ❤️ por <span className="font-bold">Clécio Lira</span>.
       </p>
     </footer>
