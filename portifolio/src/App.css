@@ -643,10 +643,6 @@ footer li a:hover {
   position: fixed;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .m-5 {
   margin: 1.25rem;
 }
@@ -665,11 +661,6 @@ footer li a:hover {
 
 .flex {
   display: flex;
-}
-
-.size-8 {
-  width: 2rem;
-  height: 2rem;
 }
 
 .w-full {
