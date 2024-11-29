@@ -6,53 +6,46 @@ import profile from "../Images/profile.png";
 import login from "../Images/login.png";
 
 // ICONS
-import js from "../Images/javascript.png";
-import nodejs from "../Images/nodejs.png";
-import html from "../Images/html.png";
-import css from "../Images/css.png";
-import react from "../Images/reactjs.png";
-import tail from "../Images/tailwind.png";
+import { AiOutlineJavaScript } from "react-icons/ai";
+import { DiNodejs } from "react-icons/di";
+import { DiHtml5 } from "react-icons/di";
+import { DiCss3 } from "react-icons/di";
+import { DiReact } from "react-icons/di";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 // PDF
-import curriculo from "../pdf/Curriculo.pdf"
-
-import view from "../Images/View_Icon.png";
+import curriculo from "../pdf/Curriculo.pdf";
 
 const icons = [
   {
     id: 0,
-    class: "scrolltop",
-    img: js,
+    Component: AiOutlineJavaScript,
     alt: "Icon JavaScript",
   },
   {
     id: 1,
-    class: "scrollbottom",
-    img: nodejs,
+    Component: DiNodejs,
     alt: "Icon NodeJS",
   },
   {
     id: 2,
-    class: "scrolltop",
-    img: html,
+    Component: DiHtml5,
     alt: "Icon HTML5",
   },
   {
     id: 3,
-    class: "scrollbottom",
-    img: css,
+    Component: DiCss3,
     alt: "Icon CSS3",
   },
   {
     id: 4,
-    class: "scrolltop",
-    img: react,
+    Component: DiReact,
     alt: "Icon React",
   },
   {
     id: 5,
-    class: "scrollbottom",
-    img: tail,
+    Component: RiTailwindCssFill,
     alt: "Icon Tailwind",
   },
 ];
@@ -60,28 +53,24 @@ const icons = [
 const projetos = [
   {
     id: 0,
-    class: "scrollbottom",
     link: "https://cleciolira.github.io/Calcular_IMC/",
     img: imc,
     title: "Site para calcular o seu IMC.",
   },
   {
     id: 1,
-    class: "scrolltop",
     link: "https://cleciolira.github.io/Web-Page-StarWars/",
     img: starwars,
     title: "Site sobre a franquia Star Wars.",
   },
   {
     id: 2,
-    class: "scrollbottom",
     link: "https://cleciolira.github.io/Social_Links_Profile/",
     img: profile,
     title: "Site social links.",
   },
   {
     id: 3,
-    class: "scrolltop",
     link: "https://cleciolira.github.io/Projeto-Login/",
     img: login,
     title: "Site tela de login.",
@@ -116,7 +105,11 @@ const Main = () => {
         </p>
 
         <div className="flex justify-evenly xl:px-40 2xl:mx-80">
-          <a href="https://wa.me/5587991090861" target="_blank">
+          <a
+            href="https://wa.me/5587991090861"
+            target="_blank"
+            aria-label="Converse comigo pelo WhatsApp"
+          >
             <button className="bg-gray-200 text-black md:px-10">
               Conversar
             </button>
@@ -134,7 +127,7 @@ const Main = () => {
         <ul className="flex justify-evenly md:px-24 xl:px-56 2xl:mx-56">
           {icons.map((icon) => (
             <li key={icon.id}>
-              <img src={icon.img} alt={icon.alt} />
+              <icon.Component title={icon.alt} className="text-4xl" />
             </li>
           ))}
         </ul>
@@ -146,7 +139,7 @@ const Main = () => {
         <div className="pb-4 md:grid md:grid-cols-2 md:grid-rows-2 2xl:mx-48">
           {projetos.map((projeto) => (
             <div key={projeto.id} className="card m-5 bg-gray-900">
-              <a href={projeto.link} target="_blank">
+              <a href={projeto.link} target="_blank" rel="noopener noreferrer">
                 <img
                   src={projeto.img}
                   alt="Foto do projeto."
@@ -158,7 +151,7 @@ const Main = () => {
                     <p>{projeto.title}</p>
                   </div>
                   <div className="mr-5">
-                    <img src={view} />
+                    <FaArrowUpRightFromSquare className="text-lg" />
                   </div>
                 </div>
               </a>
