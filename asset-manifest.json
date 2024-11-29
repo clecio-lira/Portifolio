@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portifolio/static/css/main.798519a7.css",
+    "main.js": "/Portifolio/static/js/main.dc8ba17d.js",
+    "static/js/453.9c226ca7.chunk.js": "/Portifolio/static/js/453.9c226ca7.chunk.js",
+    "static/media/starwars.png": "/Portifolio/static/media/starwars.9f9e4d339d450e8f641a.png",
+    "static/media/login.png": "/Portifolio/static/media/login.0a89e3b97f8f1b7d7930.png",
+    "static/media/IMC.png": "/Portifolio/static/media/IMC.6cb1c3fe131a98ea2c8f.png",
+    "static/media/Curriculo.pdf": "/Portifolio/static/media/Curriculo.9c41a70cca35f57ce479.pdf",
+    "static/media/profile.png": "/Portifolio/static/media/profile.d1473abdd9dfbbbe0215.png",
+    "static/media/Avatar.jpg": "/Portifolio/static/media/Avatar.63b2d506bd7ae6663470.jpg",
+    "index.html": "/Portifolio/index.html",
+    "main.798519a7.css.map": "/Portifolio/static/css/main.798519a7.css.map",
+    "main.dc8ba17d.js.map": "/Portifolio/static/js/main.dc8ba17d.js.map",
+    "453.9c226ca7.chunk.js.map": "/Portifolio/static/js/453.9c226ca7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.798519a7.css",
+    "static/js/main.dc8ba17d.js"
+  ]
+}
