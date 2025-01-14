@@ -13,6 +13,7 @@ import { DiCss3 } from "react-icons/di";
 import { DiReact } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { RiNextjsFill } from "react-icons/ri";
 
 // PDF
 import curriculo from "../pdf/Curriculo.pdf";
@@ -47,6 +48,11 @@ const icons = [
     id: 5,
     Component: RiTailwindCssFill,
     alt: "Icon Tailwind",
+  },
+  {
+    id: 6,
+    Component: RiNextjsFill,
+    alt: "Icon NextJS",
   },
 ];
 
