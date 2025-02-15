@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/Portifolio/static/css/main.f4d2f107.css",
-    "main.js": "/Portifolio/static/js/main.668a2587.js",
+    "main.js": "/Portifolio/static/js/main.014ea9bd.js",
     "static/js/453.9c226ca7.chunk.js": "/Portifolio/static/js/453.9c226ca7.chunk.js",
     "static/media/starwars.png": "/Portifolio/static/media/starwars.9f9e4d339d450e8f641a.png",
     "static/media/login.png": "/Portifolio/static/media/login.0a89e3b97f8f1b7d7930.png",
+    "static/media/pup.png": "/Portifolio/static/media/pup.dd53ed70391dcfc02e55.png",
     "static/media/IMC.png": "/Portifolio/static/media/IMC.6cb1c3fe131a98ea2c8f.png",
     "static/media/profile.png": "/Portifolio/static/media/profile.d1473abdd9dfbbbe0215.png",
     "static/media/Curriculo.pdf": "/Portifolio/static/media/Curriculo.9796b13b5cb2780b4a48.pdf",
     "static/media/Avatar.jpg": "/Portifolio/static/media/Avatar.63b2d506bd7ae6663470.jpg",
     "index.html": "/Portifolio/index.html",
     "main.f4d2f107.css.map": "/Portifolio/static/css/main.f4d2f107.css.map",
-    "main.668a2587.js.map": "/Portifolio/static/js/main.668a2587.js.map",
+    "main.014ea9bd.js.map": "/Portifolio/static/js/main.014ea9bd.js.map",
     "453.9c226ca7.chunk.js.map": "/Portifolio/static/js/453.9c226ca7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4d2f107.css",
-    "static/js/main.668a2587.js"
+    "static/js/main.014ea9bd.js"
   ]
 }
