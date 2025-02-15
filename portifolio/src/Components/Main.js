@@ -4,6 +4,7 @@ import imc from "../Images/IMC.png";
 import starwars from "../Images/starwars.png";
 import profile from "../Images/profile.png";
 import login from "../Images/login.png";
+import pup from "../Images/pup.png";
 
 // ICONS
 import { AiOutlineJavaScript } from "react-icons/ai";
@@ -81,6 +82,12 @@ const projetos = [
     img: login,
     title: "Site tela de login.",
   },
+  {
+    id: 4,
+    link: "https://projeto-pup.vercel.app/",
+    img: pup,
+    title: "Site e-commerce de Plantas.",
+  },
 ];
 
 const Main = () => {
@@ -114,6 +121,7 @@ const Main = () => {
           <a
             href="https://wa.me/5587991090861"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="Converse comigo pelo WhatsApp"
           >
             <button className="bg-gray-200 text-black md:px-10">
