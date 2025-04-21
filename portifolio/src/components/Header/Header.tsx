@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MenuHambuguer from "../MenuHamburguer/MenuHamburguer";
 
 const links = [
   {
@@ -30,8 +31,12 @@ const links = [
 
 const Header = () => {
   return (
-    <header className="bg-gray-900 p-4 flex justify-between text-white">
+    <header className="fixed z-50 w-full bg-gray-900 p-4 flex justify-between items-center text-white">
       <div>LOGO</div>
+
+      <div className="lg:hidden">
+        <MenuHambuguer />
+      </div>
 
       <div className="hidden lg:block">
         <ul className="flex gap-4">

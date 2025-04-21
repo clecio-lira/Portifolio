@@ -9,21 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.10",
     "@radix-ui/react-slot": "^1.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.503.0",
     "next": "15.3.1",
+    "p5": "^2.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-simple-typewriter": "^5.0.1",
     "tailwind-merge": "^3.2.0",
-    "tw-animate-css": "^1.2.7"
+    "three": "^0.121.1",
+    "tw-animate-css": "^1.2.7",
+    "vanta": "github:tengbao/vanta"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/three": "^0.175.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
