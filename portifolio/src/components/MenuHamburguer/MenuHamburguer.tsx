@@ -6,7 +6,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const links = [

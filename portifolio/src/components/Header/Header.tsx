@@ -1,4 +1,3 @@
-import Link from "next/link";
 import MenuHambuguer from "../MenuHamburguer/MenuHamburguer";
 
 const links = [
@@ -42,7 +41,7 @@ const Header = () => {
         <ul className="flex gap-4">
           {links.map((link) => (
             <li key={link.id} className="hover:text-gray-400">
-              <Link href={link.url}>{link.name}</Link>
+              <a href={link.url}>{link.name}</a>
             </li>
           ))}
         </ul>
