@@ -4,9 +4,9 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function TypewriterComponent() {
   return (
-    <span className="text-xl">
+    <span className="text-xl text-[#434237]">
       <Typewriter
-        words={["o Clécio Lira!", "Desenvolvedor Front-end!"]}
+        words={["o Clécio Lira!", "<Desenvolvedor Front-end!/>"]}
         loop={true}
         cursor
         cursorStyle="|"

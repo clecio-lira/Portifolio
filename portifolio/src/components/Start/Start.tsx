@@ -25,7 +25,7 @@ const Start = () => {
         </div>
 
         <div>
-          <span className="text-xl">Olá, eu sou </span><TypewriterComponent />
+          <span className="text-xl text-[#434237]">Olá, eu sou </span><TypewriterComponent />
         </div>
 
         <div className="flex gap-8">

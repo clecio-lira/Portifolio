@@ -40,7 +40,7 @@ const MenuHambuguer = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="secondary" className="rounded-sm bg-[#BC8A3C]">
+        <Button className="cursor-pointer hover:bg-[#434237] rounded-sm bg-[#BC8A3C]">
           <RxHamburgerMenu color="white"/>
         </Button>
       </SheetTrigger>
