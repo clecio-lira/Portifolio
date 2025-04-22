@@ -3,6 +3,7 @@ import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import projetoimc from "../../public/projetoimc.png";
 import projetopup from "../../public/projetopup.png";
+import arcoverdeagora from "../../public/arcoverdeagora.png";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -13,19 +14,29 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const projects = [
   {
     id: 0,
-    name: "Projeto IMC",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: projetoimc,
+    name: "Arcoverde Agora",
+    tags: ["Next.js", "Tailwind", "ShadcnUI"],
+    image: arcoverdeagora,
+    url: "https://www.arcoverdeagora.com.br/"
   },
   {
     id: 1,
     name: "Projeto PUP",
     tags: ["Next.js", "Tailwind", "Zustand"],
     image: projetopup,
+    url: "https://projeto-pup.vercel.app/"
+  },
+  {
+    id: 2,
+    name: "Projeto IMC",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: projetoimc,
+    url: "https://cleciolira.github.io/Calcular_IMC/"
   },
 ];
 
@@ -35,10 +46,7 @@ export function CarouselPlugin() {
   );
 
   return (
-    <Carousel
-      plugins={[plugin.current]}
-      className="w-3/5 text-[#434237]"
-    >
+    <Carousel plugins={[plugin.current]} className="w-3/5 xl:w-2/5 text-[#434237]">
       <CarouselContent>
         {projects.map((project) => (
           <CarouselItem key={project.id}>
@@ -48,15 +56,16 @@ export function CarouselPlugin() {
                   <Image
                     src={project.image}
                     alt={project.name}
-                    width={300}
-                    height={300}
-                    className="object-cover"
+                    className="w-full h-full py-5 md:py-4"
                     priority
                   />
 
-                  <Button className="cursor-pointer absolute -bottom-4 bg-[#BC8A3C] w-1/2 text-center rounded-sm p-2 text-white hover:bg-[#434237]">
+                  <Link
+                    href={project.url} target="_blank" rel="noopener noreferrer"
+                    className="cursor-pointer absolute -bottom-4 bg-[#BC8A3C] text-center rounded-sm py-2 px-4 text-white hover:bg-[#434237]"
+                  >
                     {project.name}
-                  </Button>
+                  </Link>
 
                   <span className="absolute -top-3 flex gap-2 flex-wrap">
                     {project.tags.map((tag, index) => (
