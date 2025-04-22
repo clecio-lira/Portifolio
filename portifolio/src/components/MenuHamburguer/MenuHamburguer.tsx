@@ -41,8 +41,8 @@ const MenuHambuguer = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="secondary" className="rounded-sm">
-          <RxHamburgerMenu />
+        <Button variant="secondary" className="rounded-sm bg-[#BC8A3C]">
+          <RxHamburgerMenu color="white"/>
         </Button>
       </SheetTrigger>
       <SheetContent className="w-[200px]">
@@ -52,7 +52,7 @@ const MenuHambuguer = () => {
               {links.map((link) => (
                 <SheetTitle key={link.id}>
                   <li className="hover:text-gray-400">
-                    <Link href={link.url}>{link.name}</Link>
+                    <a href={link.url}>{link.name}</a>
                   </li>
                 </SheetTitle>
               ))}

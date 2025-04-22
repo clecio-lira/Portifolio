@@ -31,7 +31,7 @@ const links = [
 
 const Header = () => {
   return (
-    <header className="fixed z-50 w-full bg-gray-900 p-4 flex justify-between items-center text-white">
+    <header className="fixed z-50 w-full bg-[#434237] p-4 flex justify-between items-center text-white">
       <div>LOGO</div>
 
       <div className="lg:hidden">

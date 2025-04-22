@@ -25,14 +25,14 @@ const Start = () => {
         </div>
 
         <div>
-          <TypewriterComponent />
+          <span className="text-xl">Olá, eu sou </span><TypewriterComponent />
         </div>
 
         <div className="flex gap-8">
-          <Button variant={"default"} className="cursor-pointer">
+          <Button variant={"default"} className="cursor-pointer bg-[#BC8A3C]">
             Meu CV
           </Button>
-          <Button className="cursor-pointer">Conversar</Button>
+          <Button className="cursor-pointer bg-[#BC8A3C]">Conversar</Button>
         </div>
       </div>
     </section>

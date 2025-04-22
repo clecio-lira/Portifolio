@@ -18,8 +18,8 @@ export default function VantaBirds() {
           scale: 1.0,
           scaleMobile: 1.0,
           backgroundColor: 0xffffff,
-          color1: 0x212529,
-          color2: 0x212529,
+          color1: 0xBC8A3C,
+          color2: 0xBC8A3C,
         });
         clearInterval(interval);
       }

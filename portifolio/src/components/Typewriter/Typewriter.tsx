@@ -4,9 +4,9 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function TypewriterComponent() {
   return (
-    <h1 className="text-2xl font-mono">
+    <span className="text-xl">
       <Typewriter
-        words={["Olá, eu me chamo Clécio Lira!", "Sou Desenvolvedor Front-end!"]}
+        words={["o Clécio Lira!", "Desenvolvedor Front-end!"]}
         loop={true}
         cursor
         cursorStyle="|"
@@ -14,6 +14,6 @@ export default function TypewriterComponent() {
         deleteSpeed={50}
         delaySpeed={2000}
       />
-    </h1>
+    </span>
   );
 }
