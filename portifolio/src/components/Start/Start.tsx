@@ -1,5 +1,5 @@
 import Image from "next/image";
-import foto from "../../public/cleciolira.png";
+import foto from "../../../public/cleciolira.png";
 import TypewriterComponent from "../Typewriter/Typewriter";
 import { Button } from "../ui/button";
 import VantaBirds from "../VantaBG/VantaBG";

@@ -1,11 +1,11 @@
 "use client";
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
-import projetoimc from "../../public/projetoimc.png";
-import projetopup from "../../public/projetopup.png";
-import arcoverdeagora from "../../public/arcoverdeagora.png";
-import assistirstarwars from "../../public/assistirstarwars.png";
-import sociallinks from "../../public/sociallinks.png";
+import projetoimc from "../../../public/projetoimc.png";
+import projetopup from "../../../public/projetopup.png";
+import arcoverdeagora from "../../../public/arcoverdeagora.png";
+import assistirstarwars from "../../../public/assistirstarwars.png";
+import sociallinks from "../../../public/sociallinks.png";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
