@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Skills = () => {
   const [selectedSkill, setSelectedSkill] = useState("");
@@ -49,14 +52,20 @@ const Skills = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <section
       id="skills"
       className="w-full min-h-screen bg-[#BC8A3C] text-white py-20 px-2 flex flex-col lg:flex-row justify-center items-center md:px-10 lg:px-20 xl:px-60"
     >
       <div className="p-4">
-        <h2 className="text-xl font-bold mb-2">Habilidades</h2>
-        <ul className="list-disc pl-5 text-sm">
+        <h2 className="text-xl font-bold mb-2" data-aos="fade-up">
+          Habilidades
+        </h2>
+        <ul className="list-disc pl-5 text-sm" data-aos="fade-up">
           <li>Desenvolvimento Front-end.</li>
           <li>
             Experiência sólida em HTML e CSS para criar interfaces web
@@ -90,7 +99,7 @@ const Skills = () => {
         </ul>
       </div>
 
-      <div className="w-full">
+      <div className="w-full" data-aos="fade-up" data-aos-duration="2000">
         {selectedSkill && (
           <div className="mb-4 bg-[#434237] text-white p-4 rounded shadow">
             <strong>{selectedSkill}</strong>:{" "}

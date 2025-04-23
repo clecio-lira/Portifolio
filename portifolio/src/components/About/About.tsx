@@ -1,13 +1,25 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import foto from "../../../public/ilustration.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
-    <section id="about" className="w-full min-h-screen bg-[#BC8A3C] text-white py-20 px-2 md:flex md:justify-center md:items-center md:px-10 lg:px-20 xl:px-60">
+    <section
+      id="about"
+      className="w-full min-h-screen bg-[#BC8A3C] text-white py-20 px-2 md:flex md:justify-center md:items-center md:px-10 lg:px-20 xl:px-60"
+    >
       <div className="p-4 flex-1">
-        <h3 className="font-bold text-lg tracking-widest">Sobre mim</h3>
-        <p className="pt-2">
+        <h3 className="font-bold text-lg tracking-widest" data-aos="fade-up">
+          Sobre mim
+        </h3>
+        <p className="pt-2" data-aos="fade-up">
           Olá! Me chamo Clécio, sou fascinado por desenvolvimento web. Estou em
           transição de carreira para atuar como desenvolvedor front-end, unindo
           minha experiência como Auxiliar de TI com meu interesse por interfaces
@@ -25,7 +37,11 @@ const About = () => {
         </p>
       </div>
 
-      <div className="flex justify-center pt-20 md:pt-0 flex-1">
+      <div
+        className="flex justify-center pt-20 md:pt-0 flex-1"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <Image
           src={foto}
           alt="Foto de perfil"
