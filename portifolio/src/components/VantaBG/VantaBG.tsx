@@ -32,7 +32,7 @@ export default function VantaBirds() {
     <>
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js" strategy="beforeInteractive" />
       <Script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js" strategy="afterInteractive" />
-      <div ref={vantaRef} className="w-full h-screen" />
+      <div ref={vantaRef} className="w-full min-h-screen" />
     </>
   );
 }

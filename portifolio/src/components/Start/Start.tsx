@@ -25,14 +25,25 @@ const Start = () => {
         </div>
 
         <div>
-          <span className="text-xl text-[#434237]">Olá, eu sou </span><TypewriterComponent />
+          <span className="text-xl text-[#434237]">Olá, eu sou </span>
+          <TypewriterComponent />
         </div>
 
         <div className="flex gap-8">
-          <Button variant={"default"} className="cursor-pointer bg-[#BC8A3C]">
-            Meu CV
-          </Button>
-          <Button className="cursor-pointer bg-[#BC8A3C]">Conversar</Button>
+          <a href="/curriculo.pdf" target="_blank" rel="noopener noreferrer">
+            <Button variant={"default"} className="cursor-pointer bg-[#BC8A3C]">
+              Meu CV
+            </Button>
+          </a>
+
+          <a
+            href="https://wa.me/5587991090861"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Converse comigo pelo WhatsApp"
+          >
+            <Button className="cursor-pointer bg-[#BC8A3C]">Conversar</Button>
+          </a>
         </div>
       </div>
     </section>

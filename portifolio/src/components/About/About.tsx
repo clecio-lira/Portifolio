@@ -4,11 +4,11 @@ import foto from "../../public/ilustration.png";
 
 const About = () => {
   return (
-    <section id="about" className="w-full h-screen bg-[#BC8A3C] text-white py-1 px-2 md:flex md:justify-center md:items-center md:px-10 lg:px-20 xl:px-60">
+    <section id="about" className="w-full min-h-screen bg-[#BC8A3C] text-white py-1 px-2 md:flex md:justify-center md:items-center md:px-10 lg:px-20 xl:px-60">
       <div className="pt-4 flex-1">
         <h3 className="font-bold text-lg tracking-widest">Sobre mim</h3>
         <p className="pt-4">
-          Olá! Me chamo Clécio, sou apaixonado por desenvolvimento web. Estou em
+          Olá! Me chamo Clécio, sou fascinado por desenvolvimento web. Estou em
           transição de carreira para atuar como desenvolvedor front-end, unindo
           minha experiência como Auxiliar de TI com meu interesse por interfaces
           modernas, interativas e responsivas. <br />
@@ -25,7 +25,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="flex justify-center pt-4 flex-1">
+      <div className="flex justify-center pt-20 md:pt-0 flex-1">
         <Image
           src={foto}
           alt="Foto de perfil"

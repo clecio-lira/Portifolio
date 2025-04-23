@@ -4,6 +4,8 @@ import Autoplay from "embla-carousel-autoplay";
 import projetoimc from "../../public/projetoimc.png";
 import projetopup from "../../public/projetopup.png";
 import arcoverdeagora from "../../public/arcoverdeagora.png";
+import assistirstarwars from "../../public/assistirstarwars.png";
+import sociallinks from "../../public/sociallinks.png";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -13,7 +15,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-import { Button } from "../ui/button";
 import Link from "next/link";
 
 const projects = [
@@ -38,15 +39,29 @@ const projects = [
     image: projetoimc,
     url: "https://cleciolira.github.io/Calcular_IMC/"
   },
+  {
+    id: 3,
+    name: "Projeto Star Wars",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: assistirstarwars,
+    url: "https://cleciolira.github.io/Web-Page-StarWars/"
+  },
+  {
+    id: 4,
+    name: "Projeto Social Links",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: sociallinks,
+    url: "https://cleciolira.github.io/Social_Links_Profile/"
+  },
 ];
 
 export function CarouselPlugin() {
   const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: false })
+    Autoplay({ delay: 3000, stopOnInteraction: false })
   );
 
   return (
-    <Carousel plugins={[plugin.current]} className="w-3/5 xl:w-2/5 text-[#434237]">
+    <Carousel plugins={[plugin.current]} className="w-4/5 xl:w-2/5 text-[#434237]">
       <CarouselContent>
         {projects.map((project) => (
           <CarouselItem key={project.id}>
@@ -83,8 +98,8 @@ export function CarouselPlugin() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="hidden md:block"/>
+      <CarouselNext className="hidden md:block"/>
     </Carousel>
   );
 }
