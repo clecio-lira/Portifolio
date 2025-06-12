@@ -37,21 +37,21 @@ const projects = [
     name: "Projeto IMC",
     tags: ["HTML", "CSS", "JavaScript"],
     image: projetoimc,
-    url: "https://cleciolira.github.io/Calcular_IMC/"
+    url: "https://clecio-lira.github.io/Calcular_IMC/"
   },
   {
     id: 3,
     name: "Projeto Star Wars",
     tags: ["HTML", "CSS", "JavaScript"],
     image: assistirstarwars,
-    url: "https://cleciolira.github.io/Web-Page-StarWars/"
+    url: "https://clecio-lira.github.io/Web-Page-StarWars/"
   },
   {
     id: 4,
     name: "Projeto Social Links",
     tags: ["HTML", "CSS", "JavaScript"],
     image: sociallinks,
-    url: "https://cleciolira.github.io/Social_Links_Profile/"
+    url: "https://clecio-lira.github.io/Social_Links_Profile/"
   },
 ];
 
