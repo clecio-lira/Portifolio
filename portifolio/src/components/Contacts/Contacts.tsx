@@ -17,7 +17,7 @@ const sociais = [
   {
     id: 1,
     icon: <FaGithub className="text-4xl" />,
-    url: "https://github.com/ClecioLira",
+    url: "https://github.com/clecio-lira",
   },
   {
     id: 2,

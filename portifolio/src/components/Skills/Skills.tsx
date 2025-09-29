@@ -1,7 +1,21 @@
 "use client";
 import React, { useState } from "react";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
-import { SiTypescript, SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaDocker,
+  FaUnity,
+  FaNodeJs,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiNestjs,
+  SiDotnet,
+} from "react-icons/si";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -26,14 +40,24 @@ const Skills = () => {
       desc: "Linguagem de programação para interatividade.",
     },
     {
+      label: "TypeScript",
+      icon: <SiTypescript className="text-blue-500 text-3xl" />,
+      desc: "Superset do JavaScript com tipagem estática.",
+    },
+    {
+      label: "Node.js",
+      icon: <FaNodeJs className="text-green-600 text-3xl" />,
+      desc: "Ambiente de execução JavaScript no lado do servidor.",
+    },
+    {
       label: "React",
       icon: <FaReact className="text-cyan-400 text-3xl" />,
       desc: "Biblioteca JavaScript para construir interfaces modernas.",
     },
     {
-      label: "TypeScript",
-      icon: <SiTypescript className="text-blue-500 text-3xl" />,
-      desc: "Superset do JavaScript com tipagem estática.",
+      label: "Next.js",
+      icon: <SiNextdotjs className="text-black text-3xl" />,
+      desc: "Framework React com SSR e geração estática.",
     },
     {
       label: "Tailwind",
@@ -46,9 +70,24 @@ const Skills = () => {
       desc: "Biblioteca leve de gerenciamento de estado.",
     },
     {
-      label: "Next.js",
-      icon: <SiNextdotjs className="text-black text-3xl" />,
-      desc: "Framework React com SSR e geração estática.",
+      label: "NestJS",
+      icon: <SiNestjs className="text-red-600 text-3xl" />,
+      desc: "Framework Node.js progressivo para construção de APIs.",
+    },
+    {
+      label: "C#",
+      icon: <FaUnity className="text-purple-600 text-3xl" />,
+      desc: "Linguagem orientada a objetos usada no ecossistema .NET.",
+    },
+    {
+      label: ".NET",
+      icon: <SiDotnet className="text-blue-700 text-3xl" />,
+      desc: "Framework para desenvolvimento backend e aplicações robustas.",
+    },
+    {
+      label: "Docker",
+      icon: <FaDocker className="text-sky-500 text-3xl" />,
+      desc: "Plataforma para criação e gerenciamento de containers.",
     },
   ];
 

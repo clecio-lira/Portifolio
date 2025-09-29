@@ -20,18 +20,33 @@ const About = () => {
           Sobre mim
         </h3>
         <p className="pt-2" data-aos="fade-up">
-          Olá! Me chamo Clécio, sou fascinado por desenvolvimento web. Estou em
-          transição de carreira para atuar como desenvolvedor front-end, unindo
-          minha experiência como Auxiliar de TI com meu interesse por interfaces
-          modernas, interativas e responsivas. <br />
-          Atualmente, colaboro como desenvolvedor front-end em uma microempresa,
+          Olá! Me chamo Clécio, sou fascinado por desenvolvimento web e estou em
+          transição de carreira para atuar como desenvolvedor fullstack, unindo
+          minha experiência como Auxiliar de TI com meu interesse por criar
+          soluções completas e eficientes.
+        </p>
+        <p>
+          {" "}
+          Atualmente, colaboro como engenheiro de software em uma microempresa,
           onde utilizo React e Next.js no dia a dia. Tenho experiência com
-          consumo de APIs RESTful, componentização de interfaces, e estou sempre
-          buscando evoluir com boas práticas de código e acessibilidade. <br />
+          consumo de APIs RESTful, componentização de interfaces e boas práticas
+          de código e acessibilidade.
+        </p>
+        <p>
+          No backend, adquiri conhecimentos em NodeJS, NestJS, C# e .NET, além
+          de trabalhar com Docker para conteinerização e organização de
+          ambientes. Essa combinação me permite desenvolver aplicações de ponta
+          a ponta, integrando interfaces modernas com backends robustos e
+          escaláveis.{" "}
+        </p>
+        <p>
           Também gosto de criar projetos próprios, participar de comunidades
           tech e desafios em grupo. Estou sempre aprendendo algo novo,
-          principalmente sobre SEO, design responsivo, e performance web. Meu
-          objetivo é crescer na área e contribuir com soluções que façam a
+          principalmente sobre SEO, design responsivo, performance web e
+          arquiteturas backend.{" "}
+        </p>
+        <p>
+          Meu objetivo é crescer na área e contribuir com soluções que façam a
           diferença, trabalhando em equipe e entregando experiências digitais de
           qualidade.
         </p>
@@ -44,7 +59,7 @@ const About = () => {
       >
         <Image
           src={foto}
-          alt="Foto de perfil"
+          alt="Imagem ilustrativa"
           width={300}
           height={200}
           className="rounded-lg"
