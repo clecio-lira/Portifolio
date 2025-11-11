@@ -16,21 +16,35 @@ const skills = {
     "HTML5",
     "CSS3",
     "JavaScript",
+    "React Native",
+    "Next.js",
   ],
   backend: [
     "Node.js",
     "Express",
+    "Nest.js",
+    ".NET",
+    "C#",
     "PostgreSQL",
+    "MySQL",
     "MongoDB",
     "REST APIs",
-    "GraphQL",
   ],
-  tools: ["Git", "Docker", "Vercel", "GitHub Actions", "VS Code", "Figma"],
+  tools: [
+    "Postman",
+    "Docker",
+    "Vercel",
+    "Render",
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Figma",
+  ],
 };
 
 const Skills = () => {
   return (
-    <section id="habilidades" className="py-20 px-4">
+    <section id="skills" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-balance">
           Habilidades

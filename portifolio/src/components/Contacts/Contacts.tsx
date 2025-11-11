@@ -7,10 +7,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Contacts = () => {
   return (
-    <section id="contato" className="py-20 px-4">
+    <section id="contacts" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-balance">
           Entre em Contato
@@ -33,7 +34,7 @@ const Contacts = () => {
                     href="mailto:seu@email.com"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    seu@email.com
+                    clecioliradev@gmail.com
                   </a>
                 </div>
               </div>
@@ -43,10 +44,10 @@ const Contacts = () => {
                 <div>
                   <p className="font-medium">Telefone</p>
                   <a
-                    href="tel:+5511999999999"
+                    href="tel:+5587991090861"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    +55 11 99999-9999
+                    +55 87 99109-0861
                   </a>
                 </div>
               </div>
@@ -56,7 +57,7 @@ const Contacts = () => {
                 <div>
                   <p className="font-medium">Localização</p>
                   <p className="text-sm text-muted-foreground">
-                    São Paulo, Brasil
+                    Pernambuco, Brasil
                   </p>
                 </div>
               </div>
@@ -64,7 +65,14 @@ const Contacts = () => {
 
             <div className="pt-4">
               <Button asChild size="lg" className="w-full md:w-auto">
-                <a href="mailto:seu@email.com">Enviar Email</a>
+                <a
+                  href="https://wa.me/5587991090861"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                >
+                  Enviar Mensagem <FaWhatsapp />
+                </a>
               </Button>
             </div>
           </CardContent>
