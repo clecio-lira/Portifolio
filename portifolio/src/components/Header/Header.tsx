@@ -30,8 +30,8 @@ const links = [
 
 const Header = () => {
   return (
-    <header className="fixed z-50 w-full bg-[#434237] p-4 flex justify-between items-center text-white">
-      <p className="tracking-wider text-2xl text-[#BC8A3C]">CL</p>
+    <header className="fixed z-50 w-full bg-[#1F2635] p-4 flex justify-between items-center text-white">
+      <p className="tracking-wider text-2xl">CL</p>
 
       <div className="lg:hidden">
         <MenuHambuguer />

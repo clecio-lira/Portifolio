@@ -1,49 +1,54 @@
-import Image from "next/image";
-import foto from "../../../public/cleciolira.png";
-import TypewriterComponent from "../Typewriter/Typewriter";
 import { Button } from "../ui/button";
-import VantaBirds from "../VantaBG/VantaBG";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Start = () => {
   return (
-    <section
-      id="start"
-      className="flex flex-col items-center justify-center relative w-full"
-    >
-      <VantaBirds />
-
-      <div className="flex flex-col items-center justify-center gap-10 absolute">
-        <div>
-          <Image
-            src={foto}
-            alt="Foto de perfil"
-            width={300}
-            height={200}
-            className="rounded-lg"
-            priority
-          />
+    <section className="min-h-screen flex items-center justify-center px-4 py-20">
+      <div className="max-w-4xl w-full text-center space-y-8">
+        <div className="space-y-4">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-balance">
+            Desenvolvedor Full Stack
+          </h1>
+          <p className="text-xl md:text-2xl text-muted-foreground text-balance">
+            Criando experiências web modernas e escaláveis
+          </p>
         </div>
 
-        <div>
-          <span className="text-xl text-[#434237]">Olá, eu sou </span>
-          <TypewriterComponent />
+        <div className="flex items-center justify-center gap-4 pt-4">
+          <Button variant="default" size="lg" asChild>
+            <a href="#projetos">Ver Projetos</a>
+          </Button>
+          <Button variant="outline" size="lg" asChild>
+            <a href="#contato">Entre em Contato</a>
+          </Button>
         </div>
 
-        <div className="flex gap-8">
-          <a href="/curriculo.pdf" target="_blank" rel="noopener noreferrer">
-            <Button variant={"default"} className="cursor-pointer bg-[#BC8A3C]">
-              Meu CV
-            </Button>
-          </a>
-
-          <a
-            href="https://wa.me/5587991090861"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Converse comigo pelo WhatsApp"
-          >
-            <Button className="cursor-pointer bg-[#BC8A3C]">Conversar</Button>
-          </a>
+        <div className="flex items-center justify-center gap-4 pt-8">
+          <Button variant="ghost" size="icon" asChild>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <Github className="h-5 w-5" />
+            </a>
+          </Button>
+          <Button variant="ghost" size="icon" asChild>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-5 w-5" />
+            </a>
+          </Button>
+          <Button variant="ghost" size="icon" asChild>
+            <a href="mailto:seu@email.com" aria-label="Email">
+              <Mail className="h-5 w-5" />
+            </a>
+          </Button>
         </div>
       </div>
     </section>

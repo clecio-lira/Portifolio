@@ -16,7 +16,7 @@ const FooterComponent = () => {
   }, []);
 
   return (
-    <footer className="w-full bg-[#BC8A3C] p-4 flex justify-center items-center text-white text-center">
+    <footer className="w-full bg-[#1F2635] p-4 flex justify-center items-center text-white text-center">
       <p>
         Criado por <strong>Clécio Lira</strong>, {data}, Todos os direitos
         reservados.
