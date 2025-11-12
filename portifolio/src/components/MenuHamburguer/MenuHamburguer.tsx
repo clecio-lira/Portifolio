@@ -21,13 +21,13 @@ const links = [
   },
   {
     id: 2,
-    url: "#projects",
-    name: "Projetos",
+    url: "#skills",
+    name: "Habilidades",
   },
   {
     id: 3,
-    url: "#skills",
-    name: "Habilidades",
+    url: "#projects",
+    name: "Projetos",
   },
   {
     id: 4,
@@ -40,8 +40,8 @@ const MenuHambuguer = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button className="cursor-pointer hover:bg-[#434237] rounded-sm bg-[#BC8A3C]">
-          <RxHamburgerMenu color="white"/>
+        <Button className="cursor-pointer hover:bg-[#fff] rounded-sm bg-[#fff]">
+          <RxHamburgerMenu color="#1F2635" />
         </Button>
       </SheetTrigger>
       <SheetContent className="w-[200px]">
@@ -50,7 +50,7 @@ const MenuHambuguer = () => {
             <ul className="flex flex-col gap-8">
               {links.map((link) => (
                 <SheetTitle key={link.id}>
-                  <li className="hover:text-gray-400">
+                  <li className="hover:text-[#1F2635]">
                     <a href={link.url}>{link.name}</a>
                   </li>
                 </SheetTitle>
