@@ -19,8 +19,8 @@ const About = () => {
             interfaces e boas práticas de código e acessibilidade.
           </p>
           <p>
-            No backend, adquiri conhecimentos em NodeJS, NestJS, C# e .NET, além
-            de trabalhar com Docker para conteinerização e organização de
+            No backend, adquiri conhecimentos em NodeJS, NestJS, além de
+            trabalhar com Docker para conteinerização e organização de
             ambientes. Essa combinação me permite desenvolver aplicações de
             ponta a ponta, integrando interfaces modernas com backends robustos
             e escaláveis.

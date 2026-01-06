@@ -31,6 +31,15 @@ const projects = [
     image: "/arcoverdeagora.png",
   },
   {
+    title: "Sistema de Vendas",
+    description:
+      "Sistema de vendas desenvolvido com Next.js, configurado como Progressive Web App (PWA) utilizando Serwist, permitindo funcionamento offline e armazenamento local dos pedidos via Local Storage.",
+    tags: ["Next.js", "Tailwind CSS", "Serwist"],
+    github: "https://github.com/clecio-lira/sistema-de-vendas",
+    demo: "https://sistema-de-vendas-eggky7q1r-clecio-liras-projects.vercel.app/",
+    image: "/sistemavendas.png",
+  },
+  {
     title: "Projeto PUP",
     description:
       "Plataforma completa de e-commerce de plantas desenvolvida com Next.js, incluindo carrinho de compras e painel administrativo moderno para gestão de produtos.",

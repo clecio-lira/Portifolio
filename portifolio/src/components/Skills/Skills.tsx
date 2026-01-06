@@ -23,8 +23,6 @@ const skills = {
     "Node.js",
     "Express",
     "Nest.js",
-    ".NET",
-    "C#",
     "PostgreSQL",
     "MySQL",
     "MongoDB",
@@ -39,6 +37,7 @@ const skills = {
     "GitHub",
     "VS Code",
     "Figma",
+    "Supabase",
   ],
 };
 
