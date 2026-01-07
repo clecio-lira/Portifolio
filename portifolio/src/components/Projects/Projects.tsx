@@ -18,7 +18,7 @@ const projects = [
       "Plataforma completa de e-commerce desenvolvida com Next.js, incluindo carrinho de compras, integração com Mercado Pago e painel administrativo moderno para gestão de produtos e pedidos.",
     tags: ["Next.js", "TypeScript", "Mercado Pago", "Shadcn UI", "Zustand"],
     github: undefined,
-    demo: "https://www.candidoarquiteturamais.com/",
+    demo: "https://www.candidoarquiteturamais.com",
     image: "/candido.png",
   },
   {
@@ -27,7 +27,7 @@ const projects = [
       "Portal de notícias e informações locais com interface responsiva, sistema de gerenciamento de publicações e integração de componentes dinâmicos para uma experiência fluida.",
     tags: ["Next.js", "TypeScript", "Material UI", "Shadcn UI"],
     github: undefined,
-    demo: "https://www.arcoverdeagora.com.br/",
+    demo: "https://www.arcoverdeagora.com.br",
     image: "/arcoverdeagora.png",
   },
   {
@@ -36,7 +36,7 @@ const projects = [
       "Sistema de vendas desenvolvido com Next.js, configurado como Progressive Web App (PWA) utilizando Serwist, permitindo funcionamento offline e armazenamento local dos pedidos via Local Storage.",
     tags: ["Next.js", "Tailwind CSS", "Serwist"],
     github: "https://github.com/clecio-lira/sistema-de-vendas",
-    demo: "https://sistema-de-vendas-eggky7q1r-clecio-liras-projects.vercel.app/",
+    demo: "https://sistema-de-vendas-phi.vercel.app",
     image: "/sistemavendas.png",
   },
   {
@@ -54,7 +54,7 @@ const projects = [
       "Página responsiva de links sociais inspirada no Linktree, desenvolvida com HTML e CSS puro, destacando identidade visual e usabilidade.",
     tags: ["HTML", "CSS"],
     github: "https://github.com/clecio-lira/Social_Links_Profile",
-    demo: "https://clecio-lira.github.io/Social_Links_Profile/",
+    demo: "https://clecio-lira.github.io/Social_Links_Profile",
     image: "/sociallinks.png",
   },
 ];
