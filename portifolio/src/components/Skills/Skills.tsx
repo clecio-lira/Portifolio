@@ -12,6 +12,7 @@ const skills = {
     "React",
     "Next.js",
     "TypeScript",
+    "Angular",
     "Tailwind CSS",
     "HTML5",
     "CSS3",
@@ -26,6 +27,10 @@ const skills = {
     "PostgreSQL",
     "MySQL",
     "MongoDB",
+    "Flyway",
+    "Java",
+    "Spring Boot",
+    "Redis",
     "REST APIs",
   ],
   tools: [
@@ -36,8 +41,10 @@ const skills = {
     "Git",
     "GitHub",
     "VS Code",
+    "Kubernets",
     "Figma",
     "Supabase",
+    "RabbitMQ",
   ],
 };
 
