@@ -7,13 +7,11 @@ const About = () => {
         </h2>
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
           <p className="pt-2">
-            Olá! Me chamo Clécio, sou fascinado por desenvolvimento web e estou
-            em transição de carreira para atuar como desenvolvedor fullstack,
-            unindo minha experiência como Auxiliar de TI com meu interesse por
-            criar soluções completas e eficientes.
+            Olá! Me chamo Clécio, sou fascinado por desenvolvimento web e estou disponível para atuar como desenvolvedor fullstack,
+            para criar soluções completas e eficientes.
           </p>
           <p>
-            Atualmente, colaboro como engenheiro de software em uma
+            Atualmente, colaboro desenvolvedor Full Stack em uma
             microempresa, onde utilizo React e Next.js no dia a dia. Tenho
             experiência com consumo de APIs RESTful, componentização de
             interfaces e boas práticas de código e acessibilidade.
