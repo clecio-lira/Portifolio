@@ -25,7 +25,13 @@ const projects = [
     title: "Arcoverde Agora",
     description:
       "Portal de notícias e informações locais com interface responsiva, sistema de gerenciamento de publicações e integração de componentes dinâmicos para uma experiência fluida.",
-    tags: ["Next.js", "TypeScript", "Material UI", "Shadcn UI"],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "React Hook Form",
+      "Tanstack Query",
+      "Shadcn UI",
+    ],
     github: undefined,
     demo: "https://www.arcoverdeagora.com.br",
     image: "/arcoverdeagora.png",
@@ -40,22 +46,13 @@ const projects = [
     image: "/sistemavendas.png",
   },
   {
-    title: "Projeto PUP",
+    title: "Sara Soares Psicologia",
     description:
-      "Plataforma completa de e-commerce de plantas desenvolvida com Next.js, incluindo carrinho de compras e painel administrativo moderno para gestão de produtos.",
-    tags: ["Next.js", "TypeScript", "Material UI", "Zustand"],
-    github: "https://github.com/clecio-lira/Projeto_PUP",
-    demo: "https://projeto-pup.vercel.app/",
-    image: "/projetopup.png",
-  },
-  {
-    title: "Social Links",
-    description:
-      "Página responsiva de links sociais inspirada no Linktree, desenvolvida com HTML e CSS puro, destacando identidade visual e usabilidade.",
-    tags: ["HTML", "CSS"],
-    github: "https://github.com/clecio-lira/Social_Links_Profile",
-    demo: "https://clecio-lira.github.io/Social_Links_Profile",
-    image: "/sociallinks.png",
+      "Site institucional desenvolvido para a psicóloga Sara Soares, com foco em performance, responsividade e experiência do usuário. O projeto conta com otimização para SEO, compartilhamento em redes sociais e integração com WhatsApp para agendamentos e contato.",
+    tags: ["Next.js", "Tailwind CSS", "SEO"],
+    github: "",
+    demo: "https://www.psicologasarasoares.com.br",
+    image: "/sarapsicologa.png",
   },
 ];
 
